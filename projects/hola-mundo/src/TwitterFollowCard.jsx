@@ -1,5 +1,5 @@
-export const TwitterFollowCard = ({ userName, name,  isFollowing }) => {
-    console.log(isFollowing)
+export const TwitterFollowCard = ({ children, userName, name,  isFollowing }) => {
+    
     
     return (
         <article className='tw-followCard'>
@@ -16,9 +16,8 @@ export const TwitterFollowCard = ({ userName, name,  isFollowing }) => {
             </header>
 
             <aside>
-                <button className={buttonClassName} onClick={handleClick}>
-                    <span className='tw-followCard-text'>{text}</span>
-                    <span className='tw-followCard-stopFollow'>Dejar de seguir</span>
+                <button className="tw-followCard-button">
+                    Seguir
                 </button>
             </aside>
         </article>
