@@ -11,7 +11,7 @@ function App() {
   const [board, setBoard] = useState(() => {
       const boardFromStorage = window.localStorage.getItem('board')
       if (boardFromStorage) {
-        return JSON.parse(boardFromStorage)
+        return JSON.parse(boardFromStorage)   
       }
       return Array(9).fill(null)
     }
